@@ -105,4 +105,4 @@ app.delete('/api/basket/:itemId', (req, res) => {
     res.send(JSON.stringify(basketProducts));
 })
 
-const server = app.listen(8080, () => console.log('Server is up and running on port 8080'));
+const server = app.listen(process.env.PORT, () => console.log(`Server is up and running on port ${process.env.PORT}`));
