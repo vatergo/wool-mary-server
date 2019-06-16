@@ -5,7 +5,7 @@ import '../models/user';
 const User = mongoose.model('User');
 
 export function setUpConnection() {
-    mongoose.connect('mongodb://localhost/marks_users')
+    mongoose.connect('mongodb+srv://vatergo:loveklave@wool-mary-rljon.mongodb.net/test?retryWrites=true&w=majority')
 }
 
 export function findUserById(id) {
